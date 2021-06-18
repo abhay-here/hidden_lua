@@ -63,13 +63,42 @@ A number can be an integer or a decimal number. It may be positive or negative.
     -- Hexadecimal numbers. Case insensitive.
     0xfffeee
     0Xaaa
-    0xFaB
     0XFFFF
     0xaaa.cdc
 
+    -- Scientific Notation is supported.
     8.1e2    -- equals 8.1 * 10 ^ 2
     134e-4   -- equals 134 * 10 ^ -4
     5e5      -- equals 5 * 10 ^ 5
 ```
 
 Number seperators are not supported so numbers like `1_000_000` are invalid.
+
+## Conditionals
+An if block looks like this. If the condition evaluates to true (is anything other than `nil` or `false`) then the statements inside the if-block are executed.
+```lua
+    if condition then
+        -- statements go in here
+    end
+```
+
+An if-else block looks like this. In case the condition's false, then only the else block is executed. You do not need to type `then` after `else` like you need to do for `if`.
+```lua
+    if condition then
+        -- when the condition's true
+    else
+        -- when the condition's false
+    end
+```
+An if-elseif-else chain looks like this. There can be any number of `elseif` blocks. Notice there is no space in `elseif`. The last else block is optional.
+```lua
+    if condition1 then
+
+    elseif condition2 then
+
+    elseif condition3 then
+
+    else
+
+    end
+```
