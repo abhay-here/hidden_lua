@@ -29,7 +29,7 @@ You can put any number of equal signs between the square brackets.
     --[===[
         Legal.
     ]===]
-    ---[=====[
+    --[=====[
         Legal.
     ]=====]
     
